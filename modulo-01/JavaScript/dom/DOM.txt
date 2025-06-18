@@ -1,0 +1,30 @@
+Já conhecemos que todas as tags HTML ficam dentro de <html>, que possui o <head> e o <body>, que, por sua vez, contém todos os demais elementos. Mas vamos ver agora como é essa hierarquia de elementos interage entre si, navegando e acessando dados de seus elementos filhos e de seu elemento pai. 
+
+Estamos falando do DOM, o Document Object Model ou modelo de objeto de documento.
+
+O DOM é uma documentação padronizada pelo W3C (Wolrd Wide Web Consortium) com as empresas criadoras dos principais navegadores e define como os elementos podem ser estruturados, além de definir métodos para acesso e controle total destes elementos através do JavaScript.
+
+O DOM é uma documentação padronizada pelo W3C (Wolrd Wide Web Consortium) com as empresas criadoras dos principais navegadores e define como os elementos podem ser estruturados, além de definir métodos para acesso e controle total destes elementos através do JavaScript.
+
+O elemento raiz (tag <html>) possui um pai, que representa o documento HTML:
+Cada elemento filho de document possui um nível (uma cor diferente), e cada tipo de elemento é uma classe, com suas propriedades e métodos. Isso mesmo, o DOM implementa todo o conceito de OO (Orientação a Objetos).
+
+O objeto window é o pai de todos os elementos no Document Object Model (DOM) e representa a janela do navegador. Ele fornece métodos e propriedades para controlar a janela e interagir com a página web carregada. A documentação completa de todos os métodos e propriedades dos objetos do DOM pode ser encontrada no artigo da Mozilla, acessível através do botão ao lado.
+
+Com o uso do objeto window, temos acesso à vários recursos do navegador,por exemplo:
+* Abrir uma nova janela no navegador (window.open).
+* Abrir uma nova janela no navegador (window.open).
+* Definir que site será acessado (window.location).
+* Definir o tamanho e posicionamento das janelas (propriedades width, height, top e left de window.open).
+* Definir o tamanho e posicionamento das janelas (propriedades width, height, top e left de window.open).
+
+O objeto document, como podemos imaginar, representa o documento HTML em si e toda sua estrutura. Com ele, por meio de seus métodos e atributos, podemos:
+* Acessar um elemento específico, pelo seu id, nome, tag ou classe (apenas por id retorna um único elemento, os demais podem retornam um array de elementos).
+
+document.getElementById()
+document.getElementsByName()
+document.getElementsByTagName()
+document.getElementsByClassName()
+* Acessar o título do documento (document.title).
+* Acessar a URL do documento (document.URL).
+* Criar um elemento HTML pelo JavaScript (document.createElement), entre outros.
