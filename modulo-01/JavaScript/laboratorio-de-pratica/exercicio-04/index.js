@@ -11,5 +11,5 @@ function ordenaNumeros() {
         let numero = prompt(contador + "º número: ");
         numeros.push(numero);
     }
-    return numeros.sort();
+    return document.writeln(numeros.sort());
 };
