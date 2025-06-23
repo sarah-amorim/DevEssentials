@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <style>
+        .destaque {
+            background-color: rgba(0, 0, 255, 0.338);
+            border: 1px solid black;
+        }
+    </style>
+    
+    <title>Aula Bootstrap</title>
+</head>
+<body>
+    <!--Neste layout temos duas linhas, a primeira linha está dividida de forma igual e a segunda não-->
+    <div class="container destaque"> 
+
+        <div class="row"> <!--Inicio da primeira linha-->
+            <div class="col destaque"> <!--Coluna 1-->
+                <p>Linha 1 e Coluna 1</p>
+            </div> 
+            <div class="col destaque"> <!--Coluna 2-->
+                <p>Linha 1 e Coluna 2</p>
+            </div>
+            <div class="col destaque"> <!--Coluna 3-->
+                <p>Linha 1 e Coluna 3</p>
+            </div>
+        </div> <!--Fim da primeira linha-->
+
+
+        <div class="row"> <!--Inicio da segunda linha-->
+            <div class="col-5 destaque"> <!--Coluna 1-->
+                <p>Linha 2 e Coluna 1</p>
+            </div>
+            <div class="col-5 destaque"> <!--Coluna 2-->
+                <p>Linha 2 e Coluna 2</p>
+            </div>
+            <div class="col-2 destaque"> <!--Coluna 3-->
+                <p>Linha e Coluna 3</p>
+            </div>
+        </div> <!--Fim da primeira linha-->
+
+    </div>
+
+    <!--
+     Na primeira linha, repare que a class=”row” define que essa div vai ser uma linha. Dentro de cada linha temos as divs colunas configuradas com a class col e destaque.
+     As colunas da segunda linha têm uma atribuição diferente para as colunas (col-5, col-5, col2) respectivamente, isso quer dizer que cada coluna vai ocupar 
+     um espaço programado para a linha, a primeira e segunda coluna vão ocupar 5 espaços (col-5) e a terceira coluna vai ocupar 2 espaços (col-2) desta forma podemos 
+     configurar nossa linha de acordo com a necessidade, lembrando que para uma boa configuração siga a regra das 12 colunas que o bootstrap propõem. 
+    -->
+</body>
+</html>
